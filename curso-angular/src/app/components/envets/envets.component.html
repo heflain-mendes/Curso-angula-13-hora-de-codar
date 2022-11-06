@@ -1,0 +1,9 @@
+<div class="class">
+  <div class="conteiner">
+    <p *ngIf="show" (mouseup)="alterarCor()" (mouseover)="resetCor()" [ngStyle]="{'color' : color}">
+      exibindo msg
+    </p>
+  </div>
+
+  <button (click)="showMensage()">click</button>
+</div>

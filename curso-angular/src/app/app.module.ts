@@ -8,6 +8,8 @@ import { SecondComponentComponent } from './components/second-component/second-c
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
+import { EnvetsComponent } from './components/envets/envets.component';
+import { EmitterComponent } from './components/emitter/emitter.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { IfRenderComponent } from './components/if-render/if-render.component';
     SecondComponentComponent,
     ParentDataComponent,
     DirectivesComponent,
-    IfRenderComponent
+    IfRenderComponent,
+    EnvetsComponent,
+    EmitterComponent
   ],
   imports: [
     BrowserModule,
