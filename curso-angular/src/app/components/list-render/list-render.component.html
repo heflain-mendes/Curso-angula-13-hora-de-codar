@@ -2,6 +2,9 @@
   <ul>
     <li *ngFor="let animal of animals">
       nome: {{ animal.name }} tipo: {{ animal.type }}
+      <button (click)="showAge(animal)">mostra idade</button>
     </li>
   </ul>
+  <button (click)="clear()">limpar</button>
+  <h3 *ngIf="ageVisible">{{ menssageAge }}</h3>
 </div>
