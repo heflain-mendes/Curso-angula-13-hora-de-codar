@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { FristComponentComponent } from './components/frist-component/frist-component.component';
 import { SecondComponentComponent } from './components/second-component/second-component.component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
+import { DirectivesComponent } from './components/directives/directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FristComponentComponent,
     SecondComponentComponent,
-    ParentDataComponent
+    ParentDataComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
