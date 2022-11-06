@@ -1,3 +1,14 @@
 a{
     color: aqua;
 }
+
+.class{
+    border-bottom: solid 1px darkred;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+}
+
+body{
+    padding-bottom: 500px;
+    
+}

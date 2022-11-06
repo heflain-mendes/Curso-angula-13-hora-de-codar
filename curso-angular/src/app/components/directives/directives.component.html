@@ -1,4 +1,9 @@
-<p [ngClass]="classes" [ngStyle]="{ 'font-size': + size + 'px', color: color }">
-  testando diretivas de style
-</p>
-<p [ngClass]="underline">testando o texto subilinhado</p>
+<div class="class">
+  <p
+    [ngClass]="classes"
+    [ngStyle]="{ 'font-size': +size + 'px', color: color }"
+  >
+    testando diretivas de style
+  </p>
+  <p [ngClass]="underline">testando o texto subilinhado</p>
+</div>
