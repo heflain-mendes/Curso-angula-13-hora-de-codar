@@ -1,0 +1,9 @@
+<div class="class">
+  <h2>{{ texto }}</h2>
+  <h3>{{animalEscolhido?.name}} -  {{animalEscolhido?.type}}</h3>
+  <app-filho-teste
+    [texto]="texto"
+    (eventClickButton1)="onEventClickButton1($event)"
+    (escolheuAnimal)="onEscolheuUmAnimal($event)"
+  ></app-filho-teste>
+</div>

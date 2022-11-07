@@ -1,0 +1,10 @@
+<div>
+  <button (click)="eventOcurred()">click aki</button>
+  <p>{{ texto }}</p>
+  <ul>
+    <li *ngFor="let animal of animais">
+      {{ animal.name
+      }}<button (click)="clickNow(animal)">ciick aqui</button>
+    </li>
+  </ul>
+</div>

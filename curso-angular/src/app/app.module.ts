@@ -13,6 +13,8 @@ import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipeComponentComponent } from './pipes/pipe-component/pipe-component.component';
+import { PaiTesteComponent } from './components/pai-teste/pai-teste.component';
+import { FilhoTesteComponent } from './components/filho-teste/filho-teste.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { PipeComponentComponent } from './pipes/pipe-component/pipe-component.co
     EmitterComponent,
     ChangeNumberComponent,
     ListRenderComponent,
-    PipeComponentComponent
+    PipeComponentComponent,
+    PaiTesteComponent,
+    FilhoTesteComponent
   ],
   imports: [
     BrowserModule,
