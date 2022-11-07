@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipeComponentComponent } from './pipes/pipe-component/pipe-component.component';
 import { PaiTesteComponent } from './components/pai-teste/pai-teste.component';
 import { FilhoTesteComponent } from './components/filho-teste/filho-teste.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,13 @@ import { FilhoTesteComponent } from './components/filho-teste/filho-teste.compon
     ListRenderComponent,
     PipeComponentComponent,
     PaiTesteComponent,
-    FilhoTesteComponent
+    FilhoTesteComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

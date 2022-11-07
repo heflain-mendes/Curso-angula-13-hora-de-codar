@@ -1,0 +1,26 @@
+<div class="class">
+  <form>
+    <input
+      type="text"
+      [(ngModel)]="name"
+      name="name"
+      placeholder="digite o seu nome"
+    />
+  </form>
+  <div *ngIf="name !== ''">O nome é {{ name }}</div>
+
+  <div>
+    <form>
+      <input
+        type="text"
+        placeholder="Digite seu nome"
+        [(ngModel)]="pessoa.name"
+        name="name"
+      />
+      <br />
+      <label for="dataNascimento">Data nascimento: </label>
+      <input type="date" [(ngModel)]="pessoa.dataNascimento" name="dataNascimento" id="dataNascimento" />
+    </form>
+    <div>{{ pessoa.name }}<br>{{pessoa.dataNascimento}}</div>
+  </div>
+</div>
