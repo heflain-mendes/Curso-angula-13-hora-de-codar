@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,8 @@ import { PipeComponentComponent } from './pipes/pipe-component/pipe-component.co
 import { PaiTesteComponent } from './components/pai-teste/pai-teste.component';
 import { FilhoTesteComponent } from './components/filho-teste/filho-teste.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { RouterComponent } from './components/router/router.component';
+import { ItemDetailsComponent } from './components/item-details/item-details.component';
 
 @NgModule({
   declarations: [
@@ -33,14 +36,12 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     PipeComponentComponent,
     PaiTesteComponent,
     FilhoTesteComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    RouterComponent,
+    ItemDetailsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

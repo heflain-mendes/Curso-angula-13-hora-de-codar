@@ -1,3 +1,4 @@
+import { ListService } from 'src/app/service/list.service';
 import { Animal } from 'src/app/Animal';
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
@@ -10,12 +11,9 @@ export class FilhoTesteComponent implements OnInit {
   @Input() texto: string = '';
   @Output() eventClickButton1: EventEmitter<any> = new EventEmitter();
   @Output() escolheuAnimal: EventEmitter<any> = new EventEmitter();
-  animais: Animal[] = [
-    { name: 'felicia', type: 'coelho', age: 2 },
-    { name: 'penelope', type: 'coelho', age: 3 },
-  ];
+  animais: Animal[] = [];
 
-  constructor() {}
+  constructor(private listService : ListService) {}
 
   ngOnInit(): void {}
 
@@ -26,5 +24,9 @@ export class FilhoTesteComponent implements OnInit {
 
   clickNow(animal : Animal): void{
     this.escolheuAnimal.emit(animal);
+  }
+
+  getAll(): void{
+    this.listService.getAll().subscribe((animals) => {this.animais = animals});
   }
 }
